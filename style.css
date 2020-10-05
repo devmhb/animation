@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10rem;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  background-color: #ffffff;
+}
+
+.sky {
+  height: 40%;
+  width: 100%;
+  background-color: skyblue;
+}
+.grass {
+  height: 30%;
+  width: 100%;
+  background-color: #5f975f;
+}
+.road {
+  height: 30%;
+  width: 100%;
+  background-color: gray;
+  border-top: 5px solid #a8a2a2;
+  position: relative;
+}
+.line {
+  height: 0px;
+  width: 100%;
+  border: 5px dashed #fff;
+  position: absolute;
+  top: 45%;
+}
+
+.mario {
+  position: absolute;
+  animation-name: mario;
+  animation-duration: 3s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.peo {
+  position: absolute;
+  bottom: 10px;
+  animation-name: mario;
+  animation-duration: 5s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes mario {
+  from {
+    transform: translateX(-200px);
+  }
+  to {
+    transform: translateX(2000px);
+  }
+}
