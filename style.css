@@ -19,6 +19,26 @@ html {
   width: 100%;
   background-color: skyblue;
 }
+.cloud {
+  position: absolute;
+}
+.cloud:nth-child(1) {
+  height: 200px;
+  width: 300px;
+  opacity: 0.5;
+  animation-name: cloud;
+  animation-duration: 40s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.cloud:nth-child(2) {
+  animation-name: cloud;
+  animation-duration: 20s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
 .grass {
   height: 30%;
   width: 100%;
@@ -63,5 +83,13 @@ html {
   }
   to {
     transform: translateX(2000px);
+  }
+}
+@keyframes cloud {
+  from {
+    left: 100%;
+  }
+  to {
+    left: -700px;
   }
 }
